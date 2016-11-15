@@ -1,19 +1,19 @@
 {
-            int a = 1234;
-            int n;
-            for (n = 1; n <= a; n++)
-            {
-                Console.WriteLine("введите пароль");
-                int b = Convert.ToInt32(Console.ReadLine());
-                {
-                    if (b == a)
-                        Console.WriteLine("ок");
-                    else
-                        Console.WriteLine("Не верный пароль");
-                }
-                Console.ReadLine();
+                    double c;
+                    double x;
+                    double a = Math.PI / 4, b = Math.PI / 2, h = Math.PI / 60;
+                    for (c = a; c <= b; c=c+h)
+                    {
+                       
+                        x = Math.Pow(Math.Sin(c), 2);
+
+                        Console.WriteLine("у="+x+"                     х="+c);
+                        
+                    }
+                        Console.ReadLine();
+
+                        
 
 
-            }
-        }
-                   }
+                    }
+
