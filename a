@@ -1,0 +1,38 @@
+{
+            Console.WriteLine("Введите k");
+            int k = Convert.ToInt32(Console.ReadLine());
+            int n = 0;
+            int i = 1;
+            for (n = 1; n <= 9; n++)
+            {
+                if (i == k)
+                    Console.WriteLine(i);
+                i++;
+            }
+            i = 10;
+            for (n = 10; n <= 99; n++)
+            {
+                if (k == (i % 10 + i / 10))
+                    Console.WriteLine(i);
+                i++;
+            }
+            i = 100;
+            for (n = 100; n <= 999; n++)
+            {
+                if (k == (i / 100 + i % 10 + ((i % 100) / 10)))
+                    Console.WriteLine(i);
+                i++;
+            }
+            i = 1000;
+            for (n = 1000; n <= 9999; n++)
+            {
+                if (k == (i % 10 + i / 1000 + ((i / 100) % 10) + (i / 10) % 10))
+                    Console.WriteLine(i);
+                i++;
+            }
+            Console.ReadLine();
+            
+                    }
+                }
+        }
+    
